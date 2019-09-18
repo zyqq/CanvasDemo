@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CanvaClock</title>
+    <style>
+      div {
+        text-align: center;
+        margin-top: 250px;
+        position: relative;
+      }
+      #bg {
+        position: absolute;
+        left: 50%-150px;
+        top: 0;
+        z-index: -1;
+      }
+      #clock {
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <canvas id="bg"></canvas>
+      <canvas id="clock" height="300px" width="300px"></canvas>
+    </div>
+
+    <script src="./clock.js"></script>
+    <script src="./bg.js"></script>
+  </body>
+</html>

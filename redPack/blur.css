@@ -1,0 +1,31 @@
+#blur-div {
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+}
+#blur-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+
+  filter: blur(30px);
+  -webkit-filter: blur(30px);
+  -moz-filter: blur(30px);
+  -ms-filter: blur(30px);
+  -o-filter: blur(30px);
+
+  z-index: 0;
+}
+#canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  display: block;
+  z-index: 1;
+}
